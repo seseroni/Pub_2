@@ -109,12 +109,12 @@ h1,h2,h3,h4,h5,h6 {
 
 /* 01 - Show Hide Function : Show Hide */
 
-/* .item-desc {
+.item-desc {
     display: none;
 }
 .item:hover .item-desc {
     display: block;
-} */
+}
 
 /* 02 - Show Hide Function : Show Hide */
 
@@ -131,7 +131,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* 03 - Show Hide Function : Show Hide */
 
-.item {
+/* .item {
     position: relative;
 }
 .item-desc {
@@ -141,4 +141,4 @@ h1,h2,h3,h4,h5,h6 {
 }
 .item:hover .item-desc {
     display: block;
-}
+} */

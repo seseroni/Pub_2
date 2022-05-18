@@ -82,12 +82,12 @@
     <script>
         /*방식1 */
 
-        $('.item').mouseover(function(){
-            $(this).children('.item-desc').show();
-        })
-        $('.item').mouseleave(function(){
-            $(this).children('.item-desc').hide();
-        })
+        // $('.item').mouseover(function(){
+        //     $(this).children('.item-desc').show();
+        // })
+        // $('.item').mouseleave(function(){
+        //     $(this).children('.item-desc').hide();
+        // })
 
         /*방식2 */
 
@@ -100,12 +100,12 @@
 
         /*방식3 */
 
-        // $('.item').mouseenter(function(){
-        //     $(this).find('.item-desc').slideDown()
-        // })
-        // $('.item').mouseleave(function(){
-        //     $(this).find('.item-desc').slideUp()
-        // })
+        $('.item').mouseenter(function(){
+            $(this).find('.item-desc').slideDown()
+        })
+        $('.item').mouseleave(function(){
+            $(this).find('.item-desc').slideUp()
+        })
     </script>
 
 </body>
