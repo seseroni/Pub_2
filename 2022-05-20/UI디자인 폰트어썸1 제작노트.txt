@@ -1,0 +1,9 @@
+.frame
+    h1
+    p
+    .btns
+        a.btn.download
+        a.btn.checkout
+    .links
+        span
+        a*3

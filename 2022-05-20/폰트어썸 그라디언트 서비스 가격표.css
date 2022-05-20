@@ -1,0 +1,38 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.6em;
+    color: #222;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+/* Section Card UI - Web hosting Service */
+.content {
+    width: 1100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.items {
+    text-align: center;
+}
+.item {
+    display: inline-block;
+    width: 340px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
