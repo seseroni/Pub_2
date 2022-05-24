@@ -1,0 +1,80 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+body { 
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.6em;
+    color: #222;
+    /* Flex & Grid Centering */
+    /* display: flex; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    margin: 0;
+}
+
+/* CSS Keyframe Animation - Circle Loading  */
+.loading {
+    /* border: 1px solid #000; */
+    width: 60px;
+    height: 60px;
+    /* Position */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    position: relative;
+}
+.circle {
+    border: 5px solid #000;
+    width: inherit;
+    height: inherit;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-right-color: lightgray;
+    border-left-color: lightgray;
+    animation: circle 1s linear infinite /* reverse */;
+    /* animation-direction: reverse; = rotate(-360deg) */
+}
+.loading span {
+    font-size: 10px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    font-weight: 500;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+

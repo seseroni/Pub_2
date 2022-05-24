@@ -1,0 +1,19 @@
+.frame
+    .hexagon   
+        .shape
+            .caption
+                h2
+                p
+            img
+    .hexagon   
+        .shape
+            .caption
+                h2
+                p
+            img
+    .hexagon   
+        .shape
+            .caption
+                h2
+                p
+            img

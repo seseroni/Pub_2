@@ -1,0 +1,4 @@
+1) html 테이블 태그로 표만들기
+2) css 테이블 속성 디자인
+3) 가상클래스 nth-child... first-child... last-child
+4) 캡셔을 이용해서 제목만들기... 응용예제

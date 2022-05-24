@@ -1,0 +1,7 @@
+1) xeicon cdn 링크하기
+2) xeicon 찾아서 html에 넣기
+3) xeicon을 a태그로 감싸기
+4) a태그에 사용자정의 속성(data-text) 넣기
+5) 사용자정의속성을 CSS :before :after에서 attr로 불러오기
+6) 툴팁 만들기
+7) 툴팁 변형하기

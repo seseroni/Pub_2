@@ -1,0 +1,29 @@
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body { 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #222;
+}
+.frame i {
+    font-size: 12em;
+    color: #fff;
+    text-shadow: 0 0 30px crimson,
+                0 0 60px crimson,
+                0 0 60px crimson,
+                0 0 60px crimson;
+    animation: hue-rotate 3s linear infinite;
+    /* 속성 순서는 관계없다 딜레이를 넣지않으면 0초가 기본값 */
+}
+@keyframes hue-rotate {
+    0% {
+        filter: hue-rotate(0/*deg*/);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
