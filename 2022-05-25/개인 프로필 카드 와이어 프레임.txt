@@ -1,0 +1,16 @@
+.frame
+    .profile
+        .face
+            img
+            font-icon
+        h1>span
+        p>span
+        a.view-portfolio
+        .sns
+            div
+                font-icon
+                span>big
+        .btn-mode(:before)
+        .like-more
+            span.btn-like(:before)
+            span.btn-more
