@@ -1,0 +1,208 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6em;
+    margin: 0;
+    background: url(images/background.png) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    margin-top: 0;
+}
+input, button {
+    outline: none;
+}
+
+/* Custom checkbox & radio Login Form */
+.login {
+    width: 430px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.login h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+.login .field {
+    display: block;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding-left: 30px;
+}
+input[type=email] {
+    background: url(images/icon-user.png) no-repeat center left 2px;
+}
+input[type=password] {
+    background: url(images/icon-password.png) no-repeat center left 2px;
+}
+input[type=email]::placeholder,
+input[type=password]::placeholder {
+    color: #aaa;
+    transition: 0.35s;
+    /* visibility: visible; */
+}
+input[type=email]:focus,
+input[type=password]:focus {
+    border-color: #999;
+}
+input[type=email]:focus::placeholder,
+input[type=password]:focus::placeholder {
+    opacity: 0;
+    /* visibility: hidden; */
+}
+
+.save-info {
+    margin: 30px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    /* overflow: hidden; */
+}
+/* .save-info label {
+    float: left;
+}
+.save-info label a {
+    float: right;
+} */
+
+.event-info {
+    text-align: center;
+}
+.custom-checkbox {
+    margin: 10px;
+}
+.event-info label {
+    display: inline-block;
+    margin: 5px;
+}
+
+.login input[type=button] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to left, #4facfe 0%, #00f2fe 100%);
+    color: #fff;
+    cursor: pointer;
+}
+.sns-info {
+    text-align: center;
+    margin: 25px;
+}
+.sns {
+    margin: 10px 0;
+}
+.sns a i {
+    font-size: 26px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 47px;
+    color: #fff;
+    margin: 3px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    /* transition: 0.35s; */
+}
+.sns a:nth-child(1) i {
+    background-color: #FF5700;
+}
+.sns a:nth-child(2) i {
+    background-color: #1877F2;
+}
+.sns a:nth-child(3) i {
+    background-color: #09B83E;
+}
+.sns a:nth-child(4) i {
+    background-color: #F1C40F;
+}
+
+/* .sns a:hover i {
+    transform: rotateY(360deg);
+} */
+
+.signup-info {
+    text-align: center;
+}
+.signup-info span {
+    display: block;
+}
+.signup-info a {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.signup-info a:hover {
+    text-decoration: underline;
+}
+
+/* Custom Checkbox & Radio */
+input[id=save-email],
+input[name=event] {
+    display: none;
+}
+input[id=save-email] + em {
+    /* border: 1px solid #000; */
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+    background: url(images/icon-checkbox.png) no-repeat;
+    background-position: left;
+    /* 방법1 */
+    /* vertical-align: middle; */
+    /* margin-top: -2px; */
+    /* 방법2 */
+    transform: translateY(4px);
+}
+input[id=save-email]:checked + em {
+    background-position: right;
+}
+
+input[name=event] + em {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+    background: url(images/icon-radio.png) no-repeat;
+    background-position: left;
+    transform: translateY(3px);
+}
+input[name=event]:checked + em {
+    background-position: right;
+}
