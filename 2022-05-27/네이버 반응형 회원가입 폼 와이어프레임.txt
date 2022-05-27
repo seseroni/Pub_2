@@ -1,0 +1,40 @@
+.member
+    img.logo
+    .field
+        b
+        span.placehold-text > input[type=text]
+    .field
+        b
+        input[type=password]
+    .field
+        b
+        input[type=password]
+    .field
+        b
+        input[type=text]
+    .field.birth
+        b
+        div
+            input[type=number]
+            select
+            input[type=number]
+    .field.gender
+        b
+        div
+            (label > input[type=radio, em]) * 3
+    .field
+        b > small
+        input[type=email]
+    .field.tel-number
+        b
+        select
+        div
+            input[type-tel], input[type-button]
+    input[type-submit]
+    .member-footer
+        div > a * 4
+        span > a
+
+
+선택자1:not(선택자2) {}
+.field input:not(input[type=radio]) {}
