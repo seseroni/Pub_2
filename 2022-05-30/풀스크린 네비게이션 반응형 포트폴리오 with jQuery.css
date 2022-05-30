@@ -1,0 +1,159 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Web Fonts : Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.6em;
+}
+
+/* Toggle Trigger */
+.toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+.toggle i {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+/* Toggle Trigger */
+.toggle.active i {
+    background-color: yellowgreen;
+    transform: rotate(315deg);
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.overlay.active {
+    transform: scale(130);
+    opacity: 1;
+}
+
+/* Common CSS */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+section .inner {
+    width: 1150px;
+    text-align: center;
+}
+
+/* Section : Welcome */
+section.welcome {
+    height: 100vh;
+    width: 100%;
+}
+section.welcome img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.heading {}
+.heading h1 {
+    font-size: 3em;
+    position: relative;
+    padding-bottom: 40px;
+}
+.heading h1::before {
+    content: '';
+    position: absolute;
+    
+    width: 150px;
+    height: 4px;
+    background-color: crimson;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.heading p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.gnb {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    /* visibility: hidden; */
+    pointer-events: none;
+    transition: 0.5s;
+}
+.gnb.active {
+    opacity: 1;
+    /* visibility: visible; */
+    pointer-events: all;
+}
+.gnb a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+    line-height: 1.6em;
+    position: relative;
+    padding-right: 30px;
+}
+.gnb a:after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 0;
+    background-color: yellowgreen;
+    left: 0;
+    bottom: 7px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.gnb a:hover:after {
+    width: 100%;
+}
