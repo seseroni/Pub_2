@@ -1,0 +1,244 @@
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+body {
+    font-size: 15px;
+    color: #333;
+    margin: 0;
+    line-height: 1.5em;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* ################    Header   ################### */
+
+/* Banner */
+.banner-outer {
+    position: relative;
+    background: linear-gradient(to right, #00202B 50%, #fff 50%);
+    /* height: 40px; */
+}
+.banner {
+    width: 1450px;
+    margin: auto;
+}
+.banner img {
+    display: block;
+}
+.close-banner {
+    position: absolute;
+    color: #aaa;
+    font-size: 26px;
+    cursor: pointer;
+    right: 10px;
+    top: 5px;
+}
+
+/* LNB */
+.lnb-outer {
+    background-color: #e2edf8;
+}
+.lnb {
+    width: 1450px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.logo {}
+.lnb-navi {}
+.lnb-navi a {}
+.lnb-navi a::after {
+    content: '|';
+    font-size: 12px;
+    color: #bbb;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+.lnb-navi a:last-child:after {
+    display: none;
+}
+.lnb-navi a:hover {
+    color: dodgerblue;
+}
+
+/* GNB */
+.gnb-outer {
+    background-color: #272C38;
+}
+nav {
+    width: 1450px;
+    margin: auto;
+    position: relative;
+}
+.gnb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* height: 50px; */
+    display: flex;
+}
+.gnb li:not(.gnb li:last-child) {
+    /* float: left; */
+    height: 50px;
+    /* width: calc(calc(1450px - 50px) / 6); */
+    border-right: 1px solid rgb(139, 139, 139);
+    text-align: center;
+    /* width: 233.33333333333333333px; */
+    flex: 1;
+    position: relative;
+}
+.gnb li:last-child {
+    width: 50px;
+    background-color: #12359d;
+    position: relative;
+    transition: 0.35s;
+}
+.gnb li:last-child.active {
+    background-color: #fff;
+}
+.gnb li:first-child {
+    background-color: crimson;
+}
+.gnb li > a {
+    color: #fff;
+    display: block;
+    height: 100%;
+    padding-top: 14px;
+}
+.badge {
+    font-style: normal;
+    color: #fff;
+    background-color: crimson;
+    font-size: 12px;
+    padding: 0 5px;
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: absolute;
+    width: 100%;
+    /* display: none; */
+}
+.dropdown a {
+    background-color: #fff;
+    display: block;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.dropdown a:hover {
+    background-color: #eee;
+}
+.dropdown a:last-child {
+    border: none;
+}
+
+/* Dropdown Function #01 */
+/* .gnb li:hover .dropdown {
+    display: block;
+} */
+
+/* Dropdown Function #02 */
+.dropdown {
+    opacity: 0;
+    transition: 0.5s;
+    /* visibility: hidden; */
+    pointer-events: none;
+}
+.gnb li:hover .dropdown {
+    opacity: 1;
+    /* visibility: visible; */
+    pointer-events: all;
+}
+
+/* Trigger */
+.trigger {
+    width: 25px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.trigger span {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.35s;
+}
+.trigger span:nth-child(1) {
+    top: 0;
+}
+.trigger span:nth-child(2) {
+    top: 50%;
+}
+.trigger span:nth-child(3) {
+    top: 100%;
+}
+.trigger.active span {
+    background-color: #000;
+}
+.trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+.trigger.active span:nth-child(2) {
+    opacity: 0;
+}
+.trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+/* Sitemap */
+.sitemap-outer {
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    width: calc(100% - 1px);
+    padding: 30px 15px;
+    display: none;
+}
+.sitemap {
+    display: flex;
+}
+.sitemap div {
+    flex: 1;
+    font-size: 14px;
+    line-height: 2em;
+
+}
+.sitemap div b {}
+.sitemap div a {
+    /* display: list-item;
+    list-style: none;
+    padding: 0; */
+    display: block;
+}
+.sitemap div a::before {
+    content: '- ';
+}
+.sitemap div a:hover {
+    text-decoration: underline;
+}
+
+/* ################    Section    ################### */
+section {}
+section img {
+    width: 100%;
+}
