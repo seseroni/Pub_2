@@ -1,0 +1,45 @@
+/* Mobile Layout */
+@media (max-width: 767px) {
+    /* Common CSS */
+    .headline-share h1 {
+        font-size: 32px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    /* Section : Portfolio */
+    section.portfolio {
+        align-content: start;
+        height: auto;
+        padding: 20px;
+    }
+    .items {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Tablet Layout */
+@meida (min-width: 768px) and (max-width: 1023px) {
+    /* Common CSS */
+    .headline-share h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+        margin-top: 50px;
+    }
+    /* Section : Portfolio */
+    section.portfolio {
+        align-content: start;
+        height: auto;
+        padding: 40px;
+    }
+    .items {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    aside.item,
+    .item.thum:nth-of-type(3) {
+        /* grid-column: 1 / span 2; */
+        grid-column: span 2;
+    }
+}

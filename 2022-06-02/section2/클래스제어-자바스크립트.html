@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>클래스제어-자바스크립트</title>
+    <style>
+      .frame,
+      .btns {
+        text-align: center;
+      }
+      #greeting {
+        background-color: #eee;
+        padding: 20px;
+        color: crimson;
+      }
+      #greeting.active {
+        background-color: crimson;
+        color: #eee;
+      }
+    </style>
+</head>
+<body>
+    
+  <div class="frame">
+    <h1 id="greeting">Good to see you! I'm CodingWorks</h1>
+  </div>
+
+  <div class="btns">
+    <button id="btn1" onclick="addClass();">클래스 추가하기</button>
+    <button id="btn2" onclick="removeClass();">클래스 제거하기</button>
+    <button id="btn3" onclick="toggleClass();">클래스 토글하기</button>
+    <button id="btn4">요소 내에 텍스트 변경하기</button>
+  </div>
+
+  <script>
+    var greetingEl = document.getElementById('greeting');
+
+    function addClass() {
+      greetingEl.classList.add('active')
+    }
+    function removeClass() {
+      greetingEl.classList.remove('active')
+    }
+    function toggleClass() {
+      greetingEl.classList.toggle('active')
+    }
+
+    var btnChange = document.getElementById('btn4');
+
+    btnChange.addEventListener('click', function(){
+      greetingEl.innerHTML = 'You clicked the toggle button'
+    })
+  </script>
+    
+</body>
+</html>

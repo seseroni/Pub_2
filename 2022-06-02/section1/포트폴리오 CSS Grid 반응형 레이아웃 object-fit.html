@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 CSS Grid 반응형 레이아웃</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Featherlight.js -->
+    <script src="script/featherlight-1.7.13/featherlight.js"></script>
+    <link rel="stylesheet" href="script/featherlight-1.7.13/featherlight.css">
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="포트폴리오 CSS Grid 반응형 레이아웃 object-fit.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    
+    <section class="portfolio">
+        <div class="headline-share">
+            <h1>Publishing Portfolio</h1>
+            <!-- <hr> -->
+        </div>
+        <div class="items">
+            <aside class="item">
+                <b>Web Portfolio</b>
+                <h2>Website Publishing</h2>
+                <p class="font-noto">
+                    사용자의 편리성을 생각하며 미술이라는 컨텐츠와 어울리게 UX/UI 구조설계를 진행하였습니다. 그리고 기존 사이트에서 반응형 페이지가 될수 있도록 제작했습니다.
+                    <br><br>
+                    전체 폰트 중 영문은 Montserrat, 한글은 Noto Sans KR을 사용했으며, 제작기간은 2021년 01월 22일부터 28일까지입니다.
+                </p>
+                <p class="font-noto portfolio-info">
+                    <span>UI 디자인 방식: Photoshop</span>
+                    <span>퍼블리싱 제작방식: HTML+CSS+JQUERY</span>
+                    <span>레이아웃 제작방식 : CSS Grid & Flex</span>
+                    <span>플러그인: Slick slider</span>
+                    <span>제작 참여율: 100%</span>
+                </p>
+            </aside>
+            <div class="item thum">
+                <div class="photo">
+                    <img src="images/web-portfolio-01.jpg">
+                </div>
+                <span class="portfolio-title">
+                    Website portfolio #01
+                    <a class="btn-view pc" href="html/web-portfolio-01.html" data-featherlight="iframe">PC</a>
+                    <a class="btn-view mobile" href="html/web-portfolio-01-mobile.html" data-featherlight="iframe">MOBILE</a>
+                </span>
+            </div>
+            <div class="item thum">
+                <div class="photo">
+                    <img src="images/web-portfolio-02.jpg">
+                </div>
+                <span class="portfolio-title">
+                    Website portfolio #02
+                    <a class="btn-view pc" href="html/web-portfolio-02.html" data-featherlight="iframe">PC</a>
+                    <a class="btn-view mobile" href="html/web-portfolio-02-mobile.html" data-featherlight="iframe">MOBILE</a>
+                </span>
+            </div>
+            <div class="item thum">
+                <div class="photo">
+                    <img src="images/web-portfolio-03.jpg">
+                </div>
+                <span class="portfolio-title">
+                    Website portfolio #03
+                    <a class="btn-view pc" href="html/web-portfolio-03.html" data-featherlight="iframe">PC</a>
+                </span>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
