@@ -36,18 +36,18 @@
 
 
     <script>
-        var icon = document.querySelector('.icon'),
-            search = document.querySelector('.search'),
-            clear = document.querySelector('.clear'),
-            searchInput = document.getElementById('.searchInput'),
-            section = document.getElementsByTagName('section');
-
+        var icon = document.querySelector('.icon');
+        var search = document.querySelector('.search');
+        var clear = document.querySelector('.clear');
+        var searchInput = document.querySelector('#searchInput');
+        var section = document.getElementsByTagName('section');
+        
         // icon.onclick = function(){
         //     search.classList.toggle('active')
         // }
 
         icon.addEventListener('click', function(){
-            search.classList.toggle('active')
+            search.classList.toggle('active');
         })
 
         // clear.onclick = function(){
@@ -55,15 +55,16 @@
         // }
 
         clear.addEventListener('click', function(){
-            searchInput.value = ''
+            console.log("clear");
+            searchInput.value = '';
         })
 
         // section.onclick = function(){
         //     search.classList.remove('active')
         // }
-        for(var i=0; section.length; i++) {
+        for(var i=0; i < section.length; i++) {
             section[i].onclick = function(){
-                search.classList.remove('active')
+                search.classList.remove('active');
             }
         }
 
