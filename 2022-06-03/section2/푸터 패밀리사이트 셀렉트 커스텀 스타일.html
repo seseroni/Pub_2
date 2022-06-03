@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>푸터 패밀리사이트 셀렉트 커스텀 스타일</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="푸터 패밀리사이트 셀렉트 커스텀 스타일.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>Header</header>
+        <section>Section #01</section>
+        <section>Section #02</section>
+        <section>Section #03</section>
+        <section>Section #04</section>
+        <footer>
+            <div class="footer-inner">
+                <div class="copyright">
+                    <div class="policy">
+                        <a href="#none">개인정보처리방침</a><em>|</em><a href="#none">사이트맵</a>
+                    </div>
+                    <div class="info">
+                        <p>
+                            인천광역시 중구 개항로 6층 (주)코딩웍스<em>|</em>Tel. 032-850-4345, 4346<em>|</em>E-mail. codingworks@abcd.com
+                        </p>
+                        <p>
+                            COPYRIGHT (C) CODINGWORKS COMPANY. ALL RIGHTS RESERVED.
+                        </p>
+                    </div>
+                </div>
+                <div class="family">
+                    <div class="dropdown">
+                        <div class="title">Family Site</div>
+                        <ul class="sub-navi">
+                            <li><a href="https://www.inflearn.com/users/@codingworks" target="_blank">코딩웍스 인프런 강좌</a></li>
+                            <li><a href="https://www.inflearn.com/users/@codingworks/blogs" target="_blank">코딩웍스 퍼블리싱 블로그</a></li>
+                            <li><a href="https://www.youtube.com/codingworks" target="_blank">코딩웍스 퍼블리싱 유튜브</a></li>
+                            <li><a href="https://www.inflearn.com" target="_blank">인프런 홈페이지</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        $('.title').click(function(){
+            $('.sub-navi').slideToggle()
+            $(this).toggleClass('active')
+        })
+        $('.sub-navi li').click(function(){
+            var link = $(this).text();
+            $(this).parent().slideUp()
+            $('.title').text(link)
+        })
+    </script>
+
+</body>
+</html>

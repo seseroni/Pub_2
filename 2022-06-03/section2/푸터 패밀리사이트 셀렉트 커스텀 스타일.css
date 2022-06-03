@@ -1,0 +1,136 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6em;
+    background-color: #fff;
+    color: #222;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+header {
+    height: 100px;
+    background-color: skyblue;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    line-height: 100px;
+}
+section {
+    height: 500px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 500px;
+}
+section:nth-of-type(odd) /* 2n + 1 */{
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #37393d;
+    color: #999;
+    padding: 30px;
+}
+.footer-inner {
+    width: 1280px;
+    margin: auto;
+    /* overflow: hidden; */
+    height: 130px;
+}
+.footer-inner:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.copyright {
+    float: left;
+}
+.family {
+    float: right;
+    padding-top: 40px;
+}
+.policy {}
+.policy a {
+    color: #fff;
+}
+.policy a:first-child {
+    color: yellowgreen;
+    font-weight: 500;
+}
+.policy a:hover {
+    text-decoration: underline;
+}
+footer em {
+    font-style: normal;
+    color: #555;
+    margin: 7px;
+    font-size: 10px;
+    display: inline-block;
+    /* vertical-align: middle; */
+    transform: translateY(-3px);
+}
+.info p {
+    margin: 5px 0;
+}
+
+/* Family Site */
+.dropdown {
+    border: 1px solid #000;
+    width: 200px;
+    border: 1px solid #555;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+}
+.title {
+    color: #fff;
+    text-transform: uppercase;
+}
+.title::after {
+    content: '\f107';
+    font-family: fontawesome;
+    position: absolute;
+    right: 5px;
+}
+.title.active:after {
+    transform: rotate(180deg);
+}
+.sub-navi {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+    display: none;
+}
+.sub-navi li {}
+.sub-navi li a {
+    color: #fff;
+    display: block;
+    padding: 7px;
+    background-color: #555;
+    border-bottom: 1px solid #aaa;
+}
+.sub-navi li a:last-child {
+    border: none;
+}
+.sub-navi li a:hover {
+    background-color: #333;
+}

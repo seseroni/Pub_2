@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>검색창 확장하기</title>
+    <link rel="stylesheet" href="검색창 확장하기.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="search">
+                <span class="clear"><i class="xi-close-thin"></i></span>
+                <div class="icon"><i class="xi-search"></i></div>
+                <div class="input-frame">
+                    <input type="text" id="searchInput" placeholder="Type Here...">
+                </div>
+            </div>
+        </header>
+        <section>
+            <h1>This is Section #01</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor quaerat sapiente cumque! Nihil maxime unde voluptatum provident consequuntur corporis repellendus aperiam illum nam ipsa nulla excepturi, aspernatur saepe suscipit totam magni ratione reiciendis iusto eligendi laborum numquam? Aliquam quasi ab odit libero iusto recusandae repellendus soluta excepturi dolor facilis.
+            </p>
+        </section>
+        <section>
+            <h1>This is Section #02</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor quaerat sapiente cumque! Nihil maxime unde voluptatum provident consequuntur corporis repellendus aperiam illum nam ipsa nulla excepturi, aspernatur saepe suscipit totam magni ratione reiciendis iusto eligendi laborum numquam? Aliquam quasi ab odit libero iusto recusandae repellendus soluta excepturi dolor facilis.
+            </p>
+        </section>
+    </div>
+
+
+    <script>
+        var icon = document.querySelector('.icon'),
+            search = document.querySelector('.search'),
+            clear = document.querySelector('.clear'),
+            searchInput = document.getElementById('.searchInput'),
+            section = document.getElementsByTagName('section');
+
+        // icon.onclick = function(){
+        //     search.classList.toggle('active')
+        // }
+
+        icon.addEventListener('click', function(){
+            search.classList.toggle('active')
+        })
+
+        // clear.onclick = function(){
+        //     searchInput.value = ''
+        // }
+
+        clear.addEventListener('click', function(){
+            searchInput.value = ''
+        })
+
+        // section.onclick = function(){
+        //     search.classList.remove('active')
+        // }
+        for(var i=0; section.length; i++) {
+            section[i].onclick = function(){
+                search.classList.remove('active')
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>

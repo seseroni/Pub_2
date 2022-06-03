@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="FrontBack 트랜지션 화면변환2.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="open-navi">
+            <i class="xi-arrow-right"></i>
+        </div>
+        <div class="close-navi">
+            <i class="xi-arrow-left"></i>
+        </div>
+        <div class="front">
+            <img src="images/temp-image-01.jpg">
+        </div>
+        <div class="back">
+            <img src="images/temp-image-02.jpg">
+        </div>
+    </div>
+
+    <script>
+        $('.open-navi').click(function(){
+            $(this).addClass('active')
+            $('.close-navi').addClass('active')
+            $('.front').fadeOut()
+            $('.back').fadeIn()
+        })
+        $('.close-navi').click(function(){
+            $(this).removeClass('active')
+            $('.open-navi').removeClass('active')
+            $('.back').fadeOut()
+            $('.front').fadeIn()
+        })
+    </script>
+
+</body>
+</html>
