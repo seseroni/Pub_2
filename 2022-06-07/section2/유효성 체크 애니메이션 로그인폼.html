@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>유효성 체크 애니메이션 로그인폼</title>
+    <!-- jQuery CDN 3.5.1 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="icon" href="images/logo-favicon.png">
+    <link rel="stylesheet" href="유효선 체크 애니메이션 로그인폼.css">
+</head>
+<body>
+    
+    <section class="login">
+        <img src="images/logo-favicon.png" alt="CodingWorks Logo">
+        <h1>CodingWorks Logo</h1>
+        <form action="">
+            <div class="input-field">
+                <input type="email" id="userid" autocomplete="off" required><span>USER EMAIL</span>
+            </div>
+            <div class="input-field">
+                <input type="password" id="userpw" required maxlength="12" minlength="8"><span>
+                    PASSWORD</span>
+            </div>
+            <div class="button-field">
+                <input type="submit" value="Sign In" id="login-btn">
+            </div>
+            <div class="add-info">
+                <label>
+                    <input type="checkbox" id="save-email"><em></em><span>Save your Email?</span>
+                </label>
+                <a href="#none">Forgot Password?</a>
+            </div>
+        </form>
+    </section>
+
+    <script>
+        // var userId = $('#userid');
+        // var userPw = $('#userpw');
+        // var loginBtn = $('#user-btn');
+
+        // var $userId = $('#userid');
+        // var $userPw = $('#userpw');
+        // var $loginBtn = $('#user-btn');
+
+        var userId = $('#userid'),
+            userPw = $('#userpw'),
+            loginBtn = $('#user-btn');
+
+        loginBtn.click(function(){
+            if(userId.val() == '') {
+                userId.next('span').addClass('warning');
+                setTimeout(function(){
+                    userId.next('span').removeClass('warning')
+                }, 1500);
+            }
+            else if(userPw.val() == '') {
+                userPw.next('span').addClass('warning');
+                setTimeout(function(){
+                    userPw.next('span').removeClass('warning')
+                }, 1500);
+            }
+        })
+
+    </script>
+
+</body>
+</html>
