@@ -1,0 +1,14 @@
+■ 모바일 레이아웃 변경 시 기본원칙
+
+1) style.css를 보면서 변경할 부분을 responsive.css에서 변경
+2) float된 요소를 찾아서 float: none
+3) float: none 된 요소 width: 100%
+4) widht가 400픽셀 이상인 요소 찾아서 width: 100%
+5) 경우에 따라 position: absolute 된 요소를 찾아서 position: static, transform: translate(0)
+6) 경우에 따라 height: 100vh 또는 픽셀로 된 부분을 경우에 따라 height: auto
+7) style.css 주석을 responsive.css에서도 충실하게 유지
+8) 모바일에 맞게 폰트사이즈, 마진, 패딩, 크기 조정하기
+
+※ style.css에서 사용한 선택자 방식과 동일한 방식으로 responsive.css에서도 사용해야 함.
+
+ex) .inner > div {...}  .desc {...}   .photo {...}

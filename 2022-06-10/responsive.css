@@ -1,0 +1,124 @@
+@media (max-width: 768px) {
+    /* Common CSS */
+    section {
+        padding: 0 20px !important;
+    }
+    .inner {
+        width: 100%;
+    }
+    .inner > div {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    section.feature.smart .inner,
+    section.feature.edit .inner {
+        display: flex;
+        flex-direction: column;
+    }
+    section.feature.smart .inner .desc,
+    section.feature.edit .inner .desc {
+        order: 1;
+    }
+    section.feature.smart .inner .photo,
+    section.feature.edit .inner .photo {
+        order: 2;
+    }
+    section.feature {
+        padding: 25px 0;
+    }
+    .desc {
+        padding: 0 20px;
+        padding-top: 30px;
+        margin-bottom: 50px;
+    }
+    .desc h1 {
+        font-size: 26px;
+        line-height: 1.5em;
+    }
+
+    /* Header */
+    header .btn-download{
+        width: 150px;
+    }
+
+    /* Section : Welcome */
+    .heading {
+        width: 80%;
+    }
+    .heading h1 {
+        font-size: 32px;
+        line-height: 1.5em;
+    }
+    .download-content span {
+        display: none;
+    }
+    .statics {
+        display: none;
+    }
+    .next-section {
+        transform: translateX(-50%) scale(0.8);
+    }
+    
+
+    /* Section : CallAction */
+    section.callaction {
+        background-image: url(images/download-bg-mobile.svg);
+        padding-top: 80px !important;
+    }
+    .callaction-inner h1 {
+        font-size: 22px;
+    }
+
+    /* Footer */
+    .footer-inner {
+        width: 100%;
+    }
+
+    /* Sitemap */
+    .link-item {
+        float: none;
+        width: 100%;
+    }
+    .link-item-title {
+        border-bottom: 1px solid #ddd;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        position: relative;
+        pointer-events: all;
+    }
+    .link-item-title:after {
+        content: '\e942';
+        font-family: xeicon;
+        position: absolute;
+        right: 10px;
+        transition: 0.35s;
+    }
+    .link-item-title.active:after {
+        transform: rotate(180deg);
+    }
+    .link-item-content {
+        display: none;
+    }
+
+    /* Copyright */
+    .copyright {
+        text-align: center;
+        border: none;
+        padding-top: 0;
+    }
+    .logo-footer {
+        width: 100%;
+    }
+    .policy {
+        float: none;
+        margin-bottom: 20px;
+    }
+    .policy a {
+        margin: 2px;
+        font-size: 14px;
+    }
+    .language {
+        float: none;
+    }
+}

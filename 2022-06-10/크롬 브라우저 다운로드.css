@@ -1,0 +1,304 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    color: #3c4043;
+    line-height: 1.6em;
+}
+a {
+    text-decoration: none;
+    color: #3c4043;
+}
+
+/* Reset CSS */
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Common CSS */
+.btn-download {
+    background-color: dodgerblue;
+    color: #fff;
+    display: inline-block;
+    width: 180px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2px;
+}
+.btn-download:hover {
+    background-color: #174EA6;
+}
+
+section.feature {
+    padding: 50px 0;
+}
+.inner {
+    width: 1250px;
+    margin: auto;
+    overflow: hidden;
+    /* display: flex;
+    align-items: center; */
+}
+.inner > div {
+    float: left;
+    width: 50%;
+    /* flex: 1; */
+}
+.desc {
+    padding: 0 50px;
+    padding-top: 100px;
+}
+.desc h1 {
+    font-size: 42px;
+    line-height: 1.2em;
+}
+.photo img {
+    width: 100%;
+}
+.read-more {
+    color: purple;
+}
+.read-more:after {
+    content: '\e907';
+    font-family: xeicon;
+    margin-left: 5px;
+    display: inline-block;
+    transition: 0.35s;
+}
+.read-more:hover:after {
+    transform: translateX(5px);
+}
+
+/* Header */
+header {
+    height: 65px;
+    background: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+}
+.logo {
+    float: left;
+    padding-top: 16px;
+}
+.download {
+    float: right;
+    padding-top: 10px;
+    transform: translateX(200px);
+    transition: 0.5s;
+}
+.download.active {
+    transform: translateX(0);
+}
+
+/* Section : Welcome */
+section.welcome {
+    height: 100vh;
+    background: #F8F9FB url(images/hero-back-large-desktop.jpg) no-repeat
+    center center;
+    position: relative; 
+}
+.heading {
+    position: absolute;
+    width: 630px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.heading img {
+    width: 65px;
+}
+.heading h1 {
+    font-size: 52px;
+    line-height: 1.3em;
+    margin: 30px 0;
+}
+.heading {
+    display: block;
+    font-size: 13px;
+}
+.download-content span {
+    display: block;
+    font-size: 13px;
+}
+.statics {
+    font-size: 13px;
+}
+.statics a {
+    color: dodgerblue;
+}
+.statics a:hover {
+    color: rgb(17, 116, 216);
+}
+.statics label input[type=checkbox] {
+    /* vertical-align: middle;
+    margin-top: -1px; */
+    transform: translateY(1px);
+}
+
+.next-section {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.next-section a {
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 36px;
+    line-height: 65px;
+    background-color: #fff;
+}
+.next-section a i {
+    animation: next 1.2s linear infinite;
+}
+
+@keyframes next {
+    0% {
+        transform: translateY(-3px);
+    }
+    50% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(-3px);
+    }
+}
+
+/* Section : CallAction */
+section.callaction {
+    height: 280px;
+    background: #4285F4 url(images/download-bg-desktop.svg) no-repeat center center;
+    padding-top: 90px;
+}
+.callaction-inner {
+    text-align: center;
+}
+.callaction-inner h1 {
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+.callaction-inner .btn-download {
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+.callaction-inner .btn-download:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/* Footer */
+footer {
+    padding: 0 20px;
+}
+.footer-inner {
+    width: 1250px;
+    margin: auto;
+}
+.sns-outer {
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+}
+.sns {
+    font-size: 20px;
+}
+.sns b {
+    font-weight: normal;
+}
+.sns a {
+    font-size: 24px;
+}
+
+/* Sitemap */
+.sitemap {
+    padding: 50px 0;
+}
+.link-items {
+    overflow: hidden;
+    /* display: flex; */
+}
+.link-item {
+    float: left;
+    width: 20%;
+    /* flex: 1; */
+}
+.link-item-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    pointer-events: none;
+}
+.link-item-content {
+    line-height: 2.3em;
+}
+.link-item-content a {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+.link-item-content a:hover {
+    color: #000;
+}
+
+/* Copyright */
+.copyright {
+    padding: 50px 0;
+    border-top: 1px solid #ddd;
+    padding-bottom: 70px;
+}
+.logo-footer {
+    float: left;
+    transform: translateY(-4px);
+}
+.policy {
+    float: left;
+}
+.policy a {
+    margin:5px;
+}
+.policy a:after {
+    content: '|';
+    font-size: 14px;
+    padding-left: 10px;
+    color: #ccc;
+}
+.policy a:last-child:after {
+    display: none;
+}
+.language {
+    float: right;
+}
+.language i {
+    font-size: 20px;
+    /* vertical-align: middle;
+    margin-top: -3px; */
+    transform: translateY(4px);
+}
+.language select {
+    font-size: 14px;
+    padding: 3px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사운드 재생 제어하기</title>
+    <link rel="stylesheet" href="사운드 재생 제어하기.css">
+</head>
+<body>
+    
+    
+    <h1>자바스크립트 사운드 재생 제어하기</h1>
+    <div class="buttons">
+        <button id="btn-play-pause" onclick="playPause();">Play <i class="fa fa-play"></i></button>
+        <button onclick="stop();">Stop <i class="fa fa-stop"></i></button>
+    </div>
+    
+    <audio id="audio" src="images/mountain-sky-bgm.mp3"></audio>
+
+    <script>
+        var audio = document.getElementById('audio'),
+            btnPlayPause = document.getElementById('btn-play-pause'),
+            checkStatus = 0;
+
+        function playPause() {
+            if(checkStatus == 0) {
+                checkStatus = 1;
+                audio.play();
+                btnPlayPause.innerHTML = 'Pause <i class="fa fa-pause"></i>';
+            }
+            else {
+                checkStatus = 0;
+                audio.pause();
+                btnPlayPause.innerHTML = 'Play <i class="fa fa-play"></i>';
+            }
+            console.log(checkStatus);
+        }
+
+        function stop() {
+            playPause();
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    </script>
+
+</body>
+</html>
